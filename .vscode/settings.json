@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/d02edbcc-c970-4eb0-8956-ae8b661119d0/resourceGroups/DiovoApp/providers/Microsoft.Web/sites/diovoapp",
+    "appService.deploySubpath": "."
+}
