@@ -1,7 +1,10 @@
 language: node_js
 node_js:
   - "v14.17.0"
-# cache: npm
+deploy:
+  provider: azure_web_apps
+  on:
+    branch: master
 
 # # before_install:
 # install:
