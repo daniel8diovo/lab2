@@ -50,7 +50,7 @@ jobs:
       id: deploy-to-webapp
       uses: azure/webapps-deploy@v2
       with:
-        app-name: 'mayombo'
+        app-name: 'diovoapp'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_d6f2d1ac54244b4790817f39007a14f7 }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_cfd184d885824f7abf34321fc5f88559 }}
         package: .
