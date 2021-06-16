@@ -6,7 +6,7 @@ const mainRouter = express.Router()
 //   res.send('Hello World')
 // })
 mainRouter.get('/', function (req, res) {
-  res.send('Hello World, I\'m Node.js')
+  res.send('Hello Daniel, I\'m Node.js')
 })
 
 mainRouter.get('/about', function (req, res) {
