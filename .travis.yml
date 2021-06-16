@@ -3,8 +3,12 @@ node_js:
   - "v14.17.0"
 deploy:
   provider: azure_web_apps
+  username: Diovo
+  password: ICTPass@4481
+  site: diovoapp
   on:
     branch: master
+  
 
 # # before_install:
 # install:
