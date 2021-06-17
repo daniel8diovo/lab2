@@ -2,7 +2,7 @@
   "name": "npm",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "home.js",
   "scripts": {
     "test": "jest",
     "start": "node index"
