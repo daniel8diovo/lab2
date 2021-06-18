@@ -52,5 +52,5 @@ jobs:
       with:
         app-name: 'diovoapp'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_cfd184d885824f7abf34321fc5f88559 }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_9f0166db76d8490493f6c0d2fa644c86 }}
         package: .
