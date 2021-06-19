@@ -5,5 +5,3 @@ function mult (a, b) {
 }
 
 module.exports = mult
-
-#hh
