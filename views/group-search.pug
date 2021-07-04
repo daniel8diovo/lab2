@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Search Groups</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="cdn/css/other.css" />
+</head>
+<body background= "cdn/images/hom.png" class ="background">
+
+<div class= "jumbotron text-center bg-dark text-white" style="margin-bottom:50">
+    <h1>SEARCH AND JOIN GROUPS</h1>
+    <p id= "1"></p>
+</div>
+
+<div class = "text-center">
+    //- <form action="/lobby/api/createGroup" method="post">
+    //- <form action="/api/createGroup" method="post"> 
+    <div>
+            <h1>Enter group</h1>
+    </div>
+        <div class> 
+         <label class = "text-dark">Group name: </label>
+         </div>
+         <div class = "center">
+         <form class = "empty" action="/api/searchgroups" method="post">
+         <input class = "clear" type= "text" name= "group" id="group-name" placeholder="Enter group name" required />
+         </div>
+         <div class= "center">
+        <input class= "clear" type= "submit" id = "search-group" value="Search for group" />
+        </form>
+        </div>
+</div>
+
+<div class="center container">
+    //- <h2 >Groups found</h2>          
+    <table class="center table table-hover table-transparent">
+      <thead>
+        <tr>
+          <th>Group Name</th>
+        </tr>
+      </thead>
+      <tbody>
+        each item in items 
+             tr
+              td#group #{item}
+               <td class= "bg-dark text-white" type= "button" id = "join-group" value="join group">Request to join</td>
+</tbody>
+</table>
+</div>
+        
+    //- </form>
+<script defer src="cdn/scripts/group.js"></script>
+</body>

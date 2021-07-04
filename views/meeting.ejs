@@ -11,21 +11,25 @@
 </head>
 <body background="cdn/images/home.png">
 <div class= "jumbotron text-center bg-dark text-white"> 
-    <h1>WELCOME To The Greatest APP EVER!</h1>
-    <p>No really, it's awesome ;-)</p>
+    <h1>Online meeting setup</h1>
 </div>  <!-- sends form content to certain method in route, node file -->
 <div class="col-md-12 text-center">
+    <form action="/api/meeting" method="post">
+        <input type= "meeting" name= "meeting" id="meeting" placeholder="Paste message link" required />
+        <br></br>
+        <input type= "group" name= "group"  id="group"  placeholder="Enter group number" required />
+        <br></br>
+        <input type= "submit" value="Schedule meeting" />
+    </form>
+</div>
 
-    <a href="/login" class="btn btn-dark" role="button">Log In</a>
-    <a href="/signup" class="btn btn-dark" role="button">Sign-Up</a>
-    </div>
-    <div class="button">
-    <!-- <signup></signup> -->
-    </div>
-    
-    <form action="/logout?_method=DELETE" method="post"> <!--Decide on weither to put logout here or in lobby-->
-      <div>
-          <input type= "submit" value="Log Out" />
-      </div>
-</form>
+<div><button onclick="myFunction()">Access zoom (Requires account)</button></div>
+
 </body>
+
+<script>
+    function myFunction() {
+        window.open("https://zoom.us/signin",
+                    "", "width=300, height=300");
+    }
+</script>

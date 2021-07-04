@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Fira sans', sans-serif;
+}
+
+.background {
+    /* background-color: #023438; */
+    background-color: rgba(3, 75, 53, 0.445);
+    /* background-image: linear-gradient(to bottom right, #a6b8c7 10%, #102040) */
+}
+
+body div.body-element{
+    display:  flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login {
+    display:  flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+body label {
+    display: block;
+    color: #eee;
+    font-size:  14px;
+    
+}
+
+.clear{
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+}
+
+body input.clear {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
+    transition: 0.4s;
+    color: #222;
+    font-size: 15px;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+body div.center
+{
+    display:  flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+body input:not([type="submit"])::placeholder {
+    color: #ccc;
+}
+
+body input:not([type="submit"]):focus, form input:not([type="submit"]):valid {
+    background-color: #fff;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+body input[type="submit"] {
+    display: block;
+    width: 15%;
+    padding: 15px;
+    cursor: pointer;
+}
